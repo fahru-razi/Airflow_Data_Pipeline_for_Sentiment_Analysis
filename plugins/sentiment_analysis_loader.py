@@ -7,9 +7,10 @@ import sys
 import pandas as pd
 import postgres_loader
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'plugins'))  # Add the plugins directory to the Python path
+# Menambahkan direktori plugins ke dalam path Python
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'plugins')) 
 
-# # Memuat variabel lingkungan dari file .env ke dalam sistem
+# Memuat variabel lingkungan dari file .env ke dalam sistem
 load_dotenv()
 
 def run_analysis():

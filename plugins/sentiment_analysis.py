@@ -2,7 +2,6 @@
 from textblob import TextBlob
 import re
 
-
 class SentimentAnalysis:
 
     def __init__(self, text):

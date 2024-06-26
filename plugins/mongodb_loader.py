@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 import pymongo
 
-# Load environment variables
+# Memuat variabel lingkungan dari file .env ke dalam sistem
 load_dotenv()
 
 def get_mongo_client(mongo_uri):

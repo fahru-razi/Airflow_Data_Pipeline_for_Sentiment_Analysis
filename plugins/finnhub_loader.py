@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 import finnhub
 
-# Load environment variables
+# Memuat variabel lingkungan dari file .env ke dalam sistem
 load_dotenv()
 
 def scrape_news():
