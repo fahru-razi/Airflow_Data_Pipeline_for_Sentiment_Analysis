@@ -12,6 +12,7 @@ dist/
 # Lingkungan virtual
 .env/
 .venv/
+.env
 env/
 venv/
 env.bak/
