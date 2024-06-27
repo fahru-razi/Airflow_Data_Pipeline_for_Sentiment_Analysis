@@ -8,18 +8,17 @@ This project aims to build an automated data pipeline that efficiently collects,
 2. Run `python -m venv env` to create virtual environment
 3. Activate Python virtual environment `.\env\Scripts\activate`
 4. Run `pip install -r requirements.txt` to install Python packages
-5. Run `docker-compose up` to spin up Kafka broker
-6. Run Airflow with Docker Compose 'docker-compose up'
-7. Create Plugins and Scripts:
+5. Run Airflow with Docker Compose `docker-compose up`
+6. Create Plugins and Scripts:
     - Mongo loader: Fetch data from Finnhub API and load into MongoDB.
     - Finnhub loader: Scripts to interact with MongoDB.
     - Sentiment Analysis: Analyze sentiment from the collected news data.
     - Postgres loader:  Load analysis results into PostgreSQL.
-8. Create python code to extract from Finnhub and load to MongoDB
-9. Create python code that Get data from MongoDB, Perform Sentiment Analysis, and Load Results to PostgreSQL
-10. Run Docker Commands 
-    - Enter Airflow webserver container 'docker exec -it airflow_webserver bash'
-    - Run Finnhub to MongoDB Loader 'python /opt/airflow/plugins/finnhub_mongodb_loader.py'
-    - Run Sentiment Analysis Loader 'python /opt/airflow/plugins/sentiment_analysis_loader.py'
-    - Validate Data Load in PostgreSQL 'psql -h postgres -U airflow -d data_warehouse'
+7. Create python code to extract from Finnhub and load to MongoDB
+8. Create python code that Get data from MongoDB, Perform Sentiment Analysis, and Load Results to PostgreSQL
+9. Run Docker Commands 
+    - Enter Airflow webserver container `docker exec -it airflow_webserver bash`
+    - Run Finnhub to MongoDB Loader `python /opt/airflow/plugins/finnhub_mongodb_loader.py`
+    - Run Sentiment Analysis Loader `python /opt/airflow/plugins/sentiment_analysis_loader.py`
+    - Validate Data Load in PostgreSQL `psql -h postgres -U airflow -d data_warehouse`
 
